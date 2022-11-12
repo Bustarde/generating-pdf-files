@@ -1,0 +1,17 @@
+{
+    "name": "user/pdf-files",
+    "autoload": {
+        "psr-4": {
+            "User\\PdfFiles\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Bustarde",
+            "email": "bustarde.audriel@auf.edu.ph"
+        }
+    ],
+    "require": {
+        "fpdf/fpdf": "^1.84"
+    }
+}
