@@ -79,10 +79,12 @@ class PDF extends Fpdf
 }
 
 $pdf = new PDF();
-$title = 'The Hunger Games';
+$title = 'Harry Potter and the Prisoner of Azkaban';
 $pdf->SetTitle($title);
-$pdf->SetAuthor('Suzanne Collins');
-$pdf->PrintChapter(1,'PART I "THE TRIBUTES"','chap1.txt');
-$pdf->PrintChapter(2,'CHAPTER 2','chap2.txt');
-$pdf->PrintChapter(3,'CHAPTER 3','chap3.txt');
+$pdf->SetAuthor('J. K. Rowling');
+$pdf->PrintChapter(1,'OWL POST','chap1.txt');
+$pdf->PrintChapter(2,'AUNT MARGES BIG MISTAKE','chap2.txt');
+$pdf->PrintChapter(3,'THE KNIGHT BUS','chap3.txt');
+$pdf->PrintChapter(4,'THE LEAKY CAULDRON','chap4.txt');
+$pdf->PrintChapter(5,'THE DEMENTOR','chap5.txt');
 $pdf->Output();

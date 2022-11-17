@@ -4,14 +4,14 @@ include "vendor/autoload.php";
 
 use Fpdf\Fpdf;
 
-$pdf = new Fpdf('L', 'mm', 'A5');
+$pdf = new Fpdf();
 $pdf->AddPage();
 $pdf->SetFont('Arial', 'B', 15);
-$pdf->Cell(5, 10, 'Audriel V. Bustarde');
+$pdf->Cell(0, 5, 'Audriel V. Bustarde', 0, 1);
 $pdf->SetFont('Arial', 'B', 15);
-$pdf->Cell(5, 20,'BSIT');
+$pdf->Cell(0, 5,'BSIT', 0, 1);
 $pdf->SetFont('Arial', 'B', 15);
-$pdf->Cell(5, 30,'bustarde.audriel@auf.edu.ph');
+$pdf->Cell(0, 5,'bustarde.audriel@auf.edu.ph', 0, 1);
 $pdf->SetFont('Arial', 'B', 15);
-$pdf->Cell(5, 40,'19-0579-471');
+$pdf->Cell(0, 5,'19-0579-471', 0, 1);
 $pdf->Output();
